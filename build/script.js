@@ -60,10 +60,10 @@ window.onload = function() {
 			if(gameOver == false) {
 				if(turn%2 != 0) {
 					ctx.beginPath();
-					ctx.moveTo(15,15);
-					ctx.lineTo(85,85);
-					ctx.moveTo(85,15);
-					ctx.lineTo(15,85);
+					ctx.moveTo(15*0.75,15*0.75);
+					ctx.lineTo(85*0.75,85*0.75);
+					ctx.moveTo(85*0.75,15*0.75);
+					ctx.lineTo(15*0.75,85*0.75);
 					ctx.strokeStyle = "dodgerblue";
 					ctx.stroke();
 					ctx.closePath();
@@ -71,7 +71,7 @@ window.onload = function() {
 				}
 				else {
 					ctx.beginPath();
-					ctx.arc(50, 50, 35, 0, 2 * Math.PI, false);
+					ctx.arc(50*0.75, 50*0.75, 35*0.75, 0, 2 * Math.PI, false);
 					ctx.strokeStyle = "dodgerblue";
 					ctx.stroke();
 					ctx.closePath();
