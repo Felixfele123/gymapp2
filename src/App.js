@@ -80,15 +80,11 @@ const fetchWorkouts = async () => {
                 <h2>Rules</h2>
                 <p>Each player has to take turns</p>
                 <p>The player who fills 3 consecutive rows first wins</p>
-                <p>You can start a new game at any point</p>
             <center><button id="new">NEW GAME</button></center>
 
             </div>
 
           </section>
-        <BottomBar 
-        status={status} setStatus={setStatus}
-        newWorkoutList={newWorkoutList} activeWorkout={activeWorkout} setActiveWorkout={setActiveWorkout} setWorkouts={setWorkouts} workouts={workouts} newWorkout={newWorkout}/>
       </div>
     </Router>
   );
