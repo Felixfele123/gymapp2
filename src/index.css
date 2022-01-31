@@ -26,33 +26,33 @@ canvas {
 }
 #tic {
   margin: 0;
-  height: 318px;
-  width: 318px;
+  height: 250px;
+  width: 250px;
   display: inline-block;
 }
 #rules {
-  width: 318px;
-  height: 318px;
+  width: 250px;
+  height: 250px;
   text-align: center;
   display: inline-block;
 }
 
 p {
-  font-size: 26px;
-  margin: 15px;
+  font-size: 22px;
+  margin: 5px;
   color: brown;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 25px;
   color: brown;
 }
 
 button {
-  margin-top: 15px;
-  width: 200px;
-  height: 50px;
-  font-size: 20px;
+  margin-top: 20px;
+  width: 150px;
+  height: 35px;
+  font-size: 15px;
   font-weight: bold;
   background-color: limegreen;
   color: gold;

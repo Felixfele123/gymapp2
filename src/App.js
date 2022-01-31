@@ -63,17 +63,17 @@ const fetchWorkouts = async () => {
         <TopBar activeWorkout={activeWorkout} setActiveWorkout={setActiveWorkout} putWorkouts={putWorkouts} AppStatus={AppStatus}/>
           <section id="game">
             <div id="tic">
-                <canvas id="canvas1" width="100" height="100"></canvas>
-                <canvas id="canvas2" width="100" height="100"></canvas>
-                <canvas id="canvas3" width="100" height="100"></canvas><br/>
+                <canvas id="canvas1" width="75" height="75"></canvas>
+                <canvas id="canvas2" width="75" height="75"></canvas>
+                <canvas id="canvas3" width="75" height="75"></canvas><br/>
                 
-                <canvas id="canvas4" width="100" height="100"></canvas>
-                <canvas id="canvas5" width="100" height="100"></canvas>
-                <canvas id="canvas6" width="100" height="100"></canvas><br/>
+                <canvas id="canvas4" width="75" height="75"></canvas>
+                <canvas id="canvas5" width="75" height="75"></canvas>
+                <canvas id="canvas6" width="75" height="75"></canvas><br/>
                 
-                <canvas id="canvas7" width="100" height="100"></canvas>
-                <canvas id="canvas8" width="100" height="100"></canvas>
-                <canvas id="canvas9" width="100" height="100"></canvas>
+                <canvas id="canvas7" width="75" height="75"></canvas>
+                <canvas id="canvas8" width="75" height="75"></canvas>
+                <canvas id="canvas9" width="75" height="75"></canvas>
                 
             </div>
             <div id="rules">
