@@ -61,17 +61,31 @@ const fetchWorkouts = async () => {
     <Router> 
       <div className="App">
         <TopBar activeWorkout={activeWorkout} setActiveWorkout={setActiveWorkout} putWorkouts={putWorkouts} AppStatus={AppStatus}/>
-          <Switch >
-            <Route path="/" exact component={() => 
-              <Home status={status} setStatus={setStatus} activeWorkout={activeWorkout} setActiveWorkout={setActiveWorkout} workouts={workouts} setWorkouts={setWorkouts} newWorkout={newWorkout}/>
-            }/>
-            <Route path="/ActiveWorkout" exact component={() => 
-              <ActiveWorkout status={status} setStatus={setStatus} activeWorkout={activeWorkout} setActiveWorkout={setActiveWorkout} workouts={workouts} setWorkouts={setWorkouts} newWorkout={newWorkout} setNewWorkout={setNewWorkout}/>
-            }/>
-            <Route path="/NewWorkout" exact component={() => 
-              <NewWorkout style={{marginTop: "70px"}} workouts={workouts} setWorkouts={setWorkouts} newWorkout={newWorkout} setNewWorkout={setNewWorkout} newWorkoutList={newWorkoutList} setNewWorkoutList={setNewWorkoutList}/>
-            }/>
-          </Switch>
+          <section id="game">
+            <div id="tic">
+                <canvas id="canvas1" width="100" height="100"></canvas>
+                <canvas id="canvas2" width="100" height="100"></canvas>
+                <canvas id="canvas3" width="100" height="100"></canvas><br/>
+                
+                <canvas id="canvas4" width="100" height="100"></canvas>
+                <canvas id="canvas5" width="100" height="100"></canvas>
+                <canvas id="canvas6" width="100" height="100"></canvas><br/>
+                
+                <canvas id="canvas7" width="100" height="100"></canvas>
+                <canvas id="canvas8" width="100" height="100"></canvas>
+                <canvas id="canvas9" width="100" height="100"></canvas>
+                
+            </div>
+            <div id="rules">
+                <h2>Rules</h2>
+                <p>Each player has to take turns</p>
+                <p>The player who fills 3 consecutive rows first wins</p>
+                <p>You can start a new game at any point</p>
+            <center><button id="new">NEW GAME</button></center>
+
+            </div>
+
+          </section>
         <BottomBar 
         status={status} setStatus={setStatus}
         newWorkoutList={newWorkoutList} activeWorkout={activeWorkout} setActiveWorkout={setActiveWorkout} setWorkouts={setWorkouts} workouts={workouts} newWorkout={newWorkout}/>

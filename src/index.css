@@ -11,3 +11,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+canvas {
+  border: 1px solid dodgerblue;
+  background-color: lightyellow;
+  text-align: center;
+}
+
+#game {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#tic {
+  margin: 0;
+  height: 318px;
+  width: 318px;
+  display: inline-block;
+}
+#rules {
+  width: 318px;
+  height: 318px;
+  text-align: center;
+  display: inline-block;
+}
+
+p {
+  font-size: 26px;
+  margin: 15px;
+  color: brown;
+}
+
+h2 {
+  font-size: 35px;
+  color: brown;
+}
+
+button {
+  margin-top: 15px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: limegreen;
+  color: gold;
+  font-family: cursive;
+  border: 1px solid black;
+}
