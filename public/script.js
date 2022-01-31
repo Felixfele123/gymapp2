@@ -84,23 +84,31 @@ window.onload = function() {
 				var s = symbol[num-1];
 				for(var j=0; j < winner.length; j++) {
 					if((symbol[winner[j][0]] == s) && (symbol[winner[j][1]] == s) && (symbol[winner[j][2]] == s)) {
-						document.getElementById("result").innerText = "Player '" + s + "' won!";
 						gameOver = true;
+						setTimeout(()=>{
+							alert("Player '" + s + "' won!");
+						},200);
 					}
 				}
 				
 				//draw condition 
 				// turn > 0 gameOver == false
 				if(turn > 9 && gameOver != true) {
-					document.getElementById("result").innerText = "GAME OVER! IT WAS A DRAW!";
+					setTimeout(()=>{
+						alert("Lika, tryck nytt spel")
+					},200);
 				}
 			}
 			else {
-				alert("Game is over. Please click on the New Game button to start again.");
+				setTimeout(()=>{
+					alert("Game is over. Please click on the New Game button to start again.");
+				},200);
 			}
 		}
 		else {
-			alert("This box was already filled. Please click on another one.")
+			setTimeout(()=>{
+				alert("This box was already filled. Please click on another one.")
+			},200);
 		}
 	}
 }
